@@ -1,0 +1,45 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: black;
+}
+
+#theater-image {
+  position: center;
+}
+
+#content {
+  position: absolute;
+  top: 114px;
+  left: 460px;
+  right: 440px;
+  height: 530px;
+}
+
+#heading {
+  margin-top: 2%;
+}
+
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 40px;
+  text-rendering: optimizeLegibility;
+}
+
+#movie-input {
+  width: 50%;
+  margin: auto;
+  font-size: 15px;
+}
+
+#search-result {
+  text-align: center;
+  width: 100px;
+}
+
+.movie-list {
+  width: 300px;
+  margin: auto;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
