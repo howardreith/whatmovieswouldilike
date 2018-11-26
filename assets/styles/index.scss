@@ -1,11 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
+  background-image: url('public/Theaterbackground.png');
+  background-size: cover;
+  background-repeat: repeat-x;
   background-color: black;
-}
-
-#theater-image {
-  position: center;
 }
 
 #content {
@@ -14,6 +13,11 @@ body {
   left: 460px;
   right: 440px;
   height: 530px;
+}
+
+#result-list {
+  margin: 0;
+  padding: 0;
 }
 
 #heading {
@@ -42,4 +46,175 @@ h1 {
   margin: auto;
   padding-top: 4px;
   padding-bottom: 2px;
+}
+
+@media screen and (max-width: 1453px) {
+  #content {
+    position: absolute;
+    left: 310px;
+    right: 290px;
+    height: 440px;
+    top: 90px;
+  }
+
+  .movie-list {
+    width: 300px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1248px) {
+  #content {
+    position: absolute;
+    left: 310px;
+    right: 290px;
+    height: 440px;
+    top: 80px;
+  }
+
+  .movie-list {
+    width: 300px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  #movie-input {
+    height: 20px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  body {
+    background-image: url('public/theaterbackgroundmid.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: repeat-x;
+  }
+
+  #content {
+    position: absolute;
+    left: 310px;
+    right: 290px;
+    height: 440px;
+    top: 20px;
+  }
+
+  .movie-list {
+    width: 300px;
+    margin: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  #movie-input {
+    height: 25px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  body {
+    background-image: url('public/theaterbackgroundmid.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: repeat-x;
+  }
+
+  #content {
+    position: absolute;
+    left: 210px;
+    right: 190px;
+    height: 340px;
+    top: 20px;
+  }
+
+  .movie-list {
+    width: 300px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  #movie-input {
+    height: 18px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  body {
+    background-image: url('public/theaterbackgroundsmall.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: repeat-x;
+  }
+
+  #content {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 200px;
+    top: 25px;
+  }
+
+  .movie-list {
+    width: 300px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  #movie-input {
+    height: 20px;
+    font-size: 10px;
+  }
 }
