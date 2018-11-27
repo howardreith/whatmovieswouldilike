@@ -38,7 +38,15 @@ $('#movie-input').keyup(function () {
     resultsArray[i] = newResult[1]
   }
   // console.log('revised resultsArray is ', resultsArray)
-  for (let i = 0; i < resultsArray.length; i++) {
+  for (let i = 1; i < resultsArray.length; i++) {
+    const tempStringSplit = resultsArray[i].split()
+    for (let j = 1; j < tempStringSplit.length; j++) {
+      if (resultsArray[j] === '~') {
+        resultsArray[j] = ','
+      }
+      resultsArray[i] = tempStringSplit.join()
+    }
+    resultsArray[i] = resultsArray[i].replace('~', ',')
     if (resultsArray[i]) {
       resultList.innerHTML += `<li class="list-group-item search-result" style="width: 350px; margin: auto;">${resultsArray[i]}</li>`
     }
